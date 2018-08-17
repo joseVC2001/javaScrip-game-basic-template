@@ -1,14 +1,14 @@
 const canvas = document.querySelector("canvas");
-canvas.height = window.innerHeight;
-canvas.width = window.innerWidth;
+canvas.height = 500;
+canvas.width = 500;
 const c = canvas.getContext("2d");
 
 
 var player = {
     x: 200,
-    y: 200,
-    w: 240,
-    h: 240,
+    y: 20,
+    w: 20,
+    h: 20
     dx: 0,
     dy: 0,
     color: "red",
@@ -26,7 +26,7 @@ var player = {
 function mainLoop() {
 
     c.clearRect(0, 0, innerWidth, innerHeight);
-    c.fillStyle = "black";
+    c.fillStyle = "grey";
     c.fillRect(0, 0, innerWidth, innerHeight);
 
 
